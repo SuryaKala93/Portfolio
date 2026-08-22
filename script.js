@@ -59,11 +59,12 @@ const SKILLS = [
       { name: "Healthcare / clinic workflow", level: 85 },
       { name: "Payroll & finance (US-based client)", level: 82 },
       { name: "ERP & inventory systems", level: 80 },
+      { name: "E-commerce & multi-warehouse platforms", level: 85 },
     ],
   },
 ];
 
-const INTEGRATIONS = ["Payment Gateway", "Exotel", "Pabbly", "Collect.chat", "Bizmagnet"];
+const INTEGRATIONS = ["Payment Gateway", "Exotel", "Pabbly", "Collect.chat", "Bizmagnet", "Gallabox"];
 
 const EXPERIENCE = [
   {
@@ -184,6 +185,46 @@ const PROJECTS = [
       "GST and non-GST billing modes",
       "Centralized customer management",
       "Consolidated cross-company reporting",
+    ],
+  },
+  {
+    id: "PROJ-08",
+    slug: "ecommerce-backend-api",
+    title: "E-Commerce Platform — Backend API Development",
+    tags: ["PHP", "REST API", "MySQL", "Multi-Warehouse"],
+    desc: "Backend REST API suite powering a dynamic e-commerce website — products, multi-warehouse inventory, orders, promotions, and catalog.",
+    features: [
+      "Product, category & brand management APIs",
+      "Multi-warehouse inventory with real-time stock allocation",
+      "Order creation, order status & full lifecycle workflows",
+      "Promotion / campaign engine for dynamic discounts and offers",
+      "Secure, scalable API architecture built for high-traffic load",
+    ],
+  },
+  {
+    id: "PROJ-09",
+    slug: "payroll-mobile-app-api",
+    title: "Payroll Mobile App — Backend API Development",
+    tags: ["PHP", "REST API", "Mobile", "Auth"],
+    desc: "Backend REST APIs powering a Payroll mobile application across both Employee and Admin sides.",
+    features: [
+      "Employee-side APIs — timesheets, payslip access, profile management",
+      "Admin-side APIs — payroll processing, approvals, employee master data",
+      "Payroll reporting endpoints for admin oversight",
+      "Role-based authentication between employee and admin experiences",
+    ],
+  },
+  {
+    id: "PROJ-10",
+    slug: "fullstack-website-admin-panel",
+    title: "Full-Stack Website Development with Admin Panel",
+    tags: ["PHP", "MySQL", "Admin Dashboard"],
+    desc: "End-to-end websites built with dedicated admin panels for content, user, and data management.",
+    features: [
+      "Admin dashboards for business operations and activity monitoring",
+      "CRUD-based content and user management modules",
+      "Role-based access control and secure login",
+      "Reporting tools for administrators",
     ],
   },
 ];
