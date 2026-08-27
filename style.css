@@ -482,8 +482,11 @@ code{ font-family: var(--font-mono); }
   .contact-actions{ flex-direction: column; }
   .contact-actions .btn{ text-align: center; width: 100%; }
   .footer{ flex-direction: column; align-items: flex-start; text-align: left; }
-  .project-row{ padding: 12px 14px; }
+  .project-row{ padding: 12px 14px; flex-direction: column; align-items: flex-start; gap: 6px; }
   .project-row-id{ width: auto; order: -1; }
+  .project-row-main{ flex-basis: auto; width: 100%; }
+  .project-row-desc{ white-space: normal; overflow: visible; text-overflow: clip; }
+  .project-row-arrow{ align-self: flex-end; margin-top: -18px; }
   .tl-head{ gap: 8px; }
   .topbar-title{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .sidebar-brand{ padding: 0 4px; }
