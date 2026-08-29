@@ -345,15 +345,16 @@ code{ font-family: var(--font-mono); }
 .project-row{
   display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 14px 16px; cursor: pointer; text-align: left; width: 100%;
+  padding: 14px 16px; cursor: pointer; text-align: left; width: 100%; max-width: 100%;
+  overflow: hidden;
   transition: border-color 0.2s ease, transform 0.2s ease;
   font-family: var(--font-sans);
 }
 .project-row:hover{ border-color: var(--get); transform: translateX(2px); }
 .project-row-id{ font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); width: 64px; flex-shrink: 0; }
-.project-row-main{ flex: 1 1 200px; min-width: 0; }
-.project-row-title{ font-weight: 700; font-size: 0.94rem; overflow-wrap: break-word; }
-.project-row-desc{ color: var(--ink-soft); font-size: 0.82rem; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.project-row-main{ flex: 1 1 200px; min-width: 0; max-width: 100%; overflow: hidden; display: flex; flex-direction: column; }
+.project-row-title{ display: block; font-weight: 700; font-size: 0.94rem; overflow-wrap: break-word; word-break: break-word; }
+.project-row-desc{ display: block; max-width: 100%; color: var(--ink-soft); font-size: 0.82rem; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .project-row-arrow{ font-family: var(--font-mono); color: var(--post); flex-shrink: 0; }
 
 /* ---------- Contact ---------- */
@@ -484,7 +485,7 @@ code{ font-family: var(--font-mono); }
   .footer{ flex-direction: column; align-items: flex-start; text-align: left; }
   .project-row{ padding: 12px 14px; flex-direction: column; align-items: flex-start; gap: 6px; }
   .project-row-id{ width: auto; order: -1; }
-  .project-row-main{ flex-basis: auto; width: 100%; }
+  .project-row-main{ flex-basis: auto; width: 100%; max-width: 100%; }
   .project-row-desc{ white-space: normal; overflow: visible; text-overflow: clip; }
   .project-row-arrow{ align-self: flex-end; margin-top: -18px; }
   .tl-head{ gap: 8px; }
