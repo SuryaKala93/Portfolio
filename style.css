@@ -487,7 +487,7 @@ code{ font-family: var(--font-mono); }
   .project-row-id{ width: auto; order: -1; }
   .project-row-main{ flex-basis: auto; width: 100%; max-width: 100%; }
   .project-row-desc{ white-space: normal; overflow: visible; text-overflow: clip; }
-  .project-row-arrow{ align-self: flex-end; margin-top: -18px; }
+  .project-row-arrow{ align-self: flex-end; margin-top: 6px; }
   .tl-head{ gap: 8px; }
   .topbar-title{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .sidebar-brand{ padding: 0 4px; }
